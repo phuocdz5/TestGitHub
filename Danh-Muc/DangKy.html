@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      html{
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .main{
+        width: 540px;
+      }
+      .title-main {
+        background-color: #f8e184;
+        text-transform: uppercase;
+        font-size: 14px;
+        padding: 8px 6px;
+        margin-bottom: 15px;
+      }
+      .title-main>h3{
+        color: #cb271f;
+      }
+      h2{
+        margin-bottom: 10px;
+        color: #0071a7;
+        font-size: 20px;
+      }
+      label{
+        display: block;
+        padding: 10px 15px  3px 0;
+        margin-left: 2px;
+
+      }
+      .input{
+        width: 98%;
+        height: 35px;
+        padding: 8px;
+        outline: none;
+        box-shadow: 0 0 5px gray;
+        border-radius: 3px;
+        border: none;
+        margin-bottom: 10px;
+        margin-left: 2px;
+      }
+      .container-sex{
+        display: flex;
+      }
+      #nam{
+        margin-right: 5px;
+      }
+      textarea{
+        width: 98%;
+        padding: 8px;
+        outline: none;
+        box-shadow: 0 0 5px gray;
+        border-radius: 3px;
+        border: none;
+        margin-bottom: 10px;
+        margin-left: 2px;
+        
+      }
+      button{
+        width: 98%;
+        height: 35px;
+        margin-top: 10px;
+        margin-left: 2px;
+        background-color: #0071a7;
+        color: white;
+        font-size: 20px;
+        border-radius: 3px;
+        border: none;
+        box-shadow: 0 0 5px gray;
+      }
+      button:hover{
+        opacity: 0.8;
+        cursor: pointer;
+      }
+      
+    
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="title-main">
+            <h3>TRUNG TÂM GIÁO DỤC THƯỜNG XUYÊN SỐ 2 - TP ĐÀ NẴNG</h3>
+          </div>
+          <div class="container">
+            <h2>TRUNG TÂM GIÁO DỤC THƯỜNG XUYÊN SỐ 2 - TP ĐÀ NẴNG</h2>
+            <form action="">
+                <label for="name"><b>Họ tên *</b></label>
+                <input type="text" placeholder="Nhập họ tên" id="name"class="input" required id>
+                <label for="date"><b>Ngày sinh *</b></label>
+                <input type="date"  id="date"class="input" required id>
+                <label for="address"><b>Nơi sinh *</b></label>
+                <input type="text" placeholder="Nhập nơi sinh" id="address"class="input"required id>
+                <label for=""><b>Giới tính</b></label>
+                <div class="container-sex">
+                    <input type="radio" name="sex" id="nam"><label for="nam">Nam</label>
+                    <input type="radio" name="sex" id="nu"><label for="nu">Nữ</label>
+                </div>
+                <label for="diachi"><b>Địa chỉ</b></label>
+                <input type="text" placeholder="Nhập địa chỉ" id="diachi"class="input">
+                <label for="phone"><b>Nhập số điện thoại</b></label>
+                <input type="text" id="phone" placeholder="Nhập số điện thoại"class="input">
+                <label for="email"><b>Email</b></label>
+                <input type="email" id="email" placeholder="Nhập địa chỉ Email"class="input">
+                <label for="info"><b>Nội dung</b></label>
+                <textarea id="info" cols="30" rows="10" placeholder="Vui lòng ghi rõ thông tin đăng ký"></textarea>
+                <button type="submit">Đăng ký</button>
+            </form>
+          </div>
+    </div>
+    
+</body>
+</html>

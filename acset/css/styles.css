@@ -1,0 +1,369 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* css chung */
+ul> li {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    color: #ffa200;
+
+}
+#container{
+    margin: 0 228px;
+    box-shadow: 10px 0 30px gray;
+    display: grid;
+    height: 100%;
+}
+/* Bắt đầu css header */
+#banner{
+    width: 100%;
+    height: 29vh;
+    background:url('../image/Banner/banner.png') no-repeat center;
+    background-size: 100% 100%;
+    background-color: #fbcf21;
+
+}
+ul.nav >li{
+    display: inline;
+    position: relative;
+    padding: 9px;
+
+
+
+}
+ul.nav{
+    width: 100%;
+    height: 39px;
+    background-color: #f8e184;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+ul.nav>li>a{
+    color: #cb271f;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding:13px 7px;
+
+
+
+}
+ul.nav >i{
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #cb271f;
+}
+a.home>i{
+    color: #cb271f;
+    padding: 5px;
+
+}
+ul.nav>li:hover{
+    background-color: white;
+    cursor: pointer;
+}
+ul.nav>li:hover .nav-content{
+    color: gray;
+}
+
+.menu-con-nav{
+    display: none;
+    position: absolute;
+    background-color: white;
+    border-radius: 2px;
+    box-shadow: 0 0 3px gray;
+    width: 248px;
+    margin-top: 9px;
+    left: 0;
+    z-index: 1;
+
+}
+.menu-con-nav>ul>a>li>i{
+    padding-right: 5px;
+
+}
+.menu-con-nav >ul>a{
+    font-size: 14px;
+    color: gray;
+
+
+}
+.menu-con-nav>ul>a>li{
+    border-bottom: 1px dotted gray;
+    padding: 9px;
+    list-style: none;
+
+}
+ul.nav>li:hover .menu-con-nav{
+    display: block;
+
+}
+.menu-con-nav>ul>a:hover li{
+    color: #cb271f;
+}
+/* css header tool */
+.header-tool{
+    height: 30.8px;
+    background: #ccc url('../image/Background/header-tool.png');
+    position: relative;
+}
+marquee{
+    margin-left: 190px;
+    width: 620px;
+    text-transform: uppercase;
+    color: #0071a7;
+    display: block;
+    font-weight: bold;
+    padding: 3px;
+}
+form{
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    margin: 2px 10px;
+}
+.search-find{
+    height: 26px;
+    padding: 5px;
+    border: 1px solid #fff;
+    margin-right: -5px;
+    outline: none;
+}
+.btn-search{
+    padding: 5px 10px;
+    background-color: #ffe681;
+    color: #cb271f;
+    border: none;
+    cursor: pointer;
+}
+/* css vào content */
+#content{
+    background-color: #fff;
+}
+.line-main{
+    width: 100%;
+    height: 5px;
+    margin: 10px 0;
+    background: url('../image/Background/bg_line.png') repeat-x center;
+}
+/* css vào aside */
+.left-aside{
+    width: 270px;
+    padding: 0 10px;
+    float: left;
+}
+.title-aside{
+    background-color: #f8e184;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 6px;
+
+
+}
+.title-aside>h3>a{
+    color: #cb271f;
+}
+.title-aside>h3>i{
+    padding-right: 5px;
+    color: #cb271f;
+}
+.content-1{
+    border:2px solid #f8e184;
+    padding: 5px;
+    margin-bottom: 15px;
+}
+.content-1>ul>li{
+    padding: 5px;
+    border-bottom: 1px dotted gray;
+    font-size: 13px;
+    color: #0071a6;
+}
+
+.css-a{
+    color: #0071a6;
+    display: inline;
+}
+small{
+    color: black;
+}
+.content-2{
+    height: 300px;
+}
+.content-3>ul>li>a>img{
+    width: 250px;
+}
+.right-aside{
+    width: 270px;
+    padding: 0 10px;
+    float: right;
+}
+.logo-aside{
+    width: 80px;
+    border: 1px solid rgb(217, 217, 217);
+    margin-right: 10px;
+}
+.img-a{
+    display: flex;
+}
+.content-1>ul > .data-list{
+    border: none;
+    color: #cb271f;
+    
+}
+.data-list>h4>i{
+    margin-right: 3px;
+}
+/* css vào main */
+.main{
+    width: 540px;
+    height: 100%;
+    display: inline-block;
+}
+.title-main1{
+    margin-bottom: 15px;
+}
+
+.left-main-thumb{
+    float: left;
+    width: 280px;
+}
+.left-main-thumb>a>img{
+    width: 100%;
+}
+.left-title-thumb>h2>a{
+    color: #0071a6;
+    font-size: 16px;
+}
+.right-main-thumb{
+    width: 215px;
+    float: right;
+    background-color: #f5f5f5;
+    margin-bottom: 10px;
+}
+.right-main-thumb>ul>li{
+    padding: 8px 5px;
+    border-bottom: 1px dotted gray;
+}
+.right-main-thumb>ul>li>a{
+    color: #0071a6;
+    font-weight: bold;
+    font-size: 11px;
+}
+.right-main-thumb>ul>li>a>i{
+    margin-right: 5px;
+}
+.img-banner-main>img{
+    margin-bottom: 10px;
+    width: 540px;
+}
+.css-main-border1{
+    border: 1px solid rgb(187, 187, 187);
+    margin-bottom: 20px;
+}
+.body-main1{
+    padding: 0 10px;
+}
+.title-main2{
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 6px;
+    border-left: 5px solid #cb271f ;
+    box-shadow: inset 0 0 8px rgb(200, 200, 200);
+    margin: 0 0 20px;
+
+}
+.title-main2>h3>a{
+    color: #cb271f;
+}
+.title-main2>h3>i{
+    padding-right: 5px;
+    color: #cb271f;
+}
+.left-main-img-logo{
+    float: left;
+    margin-right: 10px;
+}
+.left-main-img-logo img{
+    border: 1px solid rgb(187, 187, 187);
+    width: 200px;
+}
+.right-title-main{
+    /* css kéo lên */
+    margin-top: -10px;
+}
+.right-title-main>h3>a{
+    font-size: 15px;
+    color: #0071a6;
+}
+.right-title-main>p{
+    font-size: 13px;
+}
+.list-main1{
+    display: inline-flex;
+}
+.list-main1>ul>li{
+    padding: 3px 0;
+}
+.list-main1>ul>li>a{
+    color: #0071a6;
+    font-size: 13px;
+}
+.list-main1>ul>li>a>i{
+    margin-right: 5px;
+    color: black;
+}
+.container-end-main{
+   padding: 0 10px;
+   margin-bottom: 30px;
+}
+.container-end-main>a>img{
+    width: 520px;
+
+}
+.container-end-main>h2>a{
+    color: #0071a6;
+    font-size: 16px;
+}
+/* css hover thẻ a trong main */
+ul>li>a:hover{
+    color: #ffa200;
+}
+.main-a:hover{
+    color: #ffa200;
+}
+/* css footer */
+#footer{
+    width: 1080px;
+    height: 100px;
+    background: url(../image/Background/header-tool.png) repeat;
+    background-color: rgb(253,208,63);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container-footer{
+    
+    text-align: center;
+    color: #f5f5f5;
+    font-size: 14px;
+    line-height: 20px;
+}
+.info-footer{
+    font-size: 12px;
+}
+.info-footer>h4>i{
+    margin-right: 10px;
+    font-size: 12px;
+}
